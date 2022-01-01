@@ -136890,6 +136890,7 @@ var User =
 function () {
   // Used parseFloat on lat and lng, because faker has them as strings and not number
   function User() {
+    this.color = 'red';
     this.name = faker_1.default.name.firstName();
     this.location = {
       lat: parseFloat(faker_1.default.address.latitude()),
@@ -136929,6 +136930,7 @@ var Company =
 function () {
   // Used parseFloat on lat and lng, because faker has them as strings and not number
   function Company() {
+    this.color = 'red';
     this.companyName = faker_1.default.company.companyName();
     this.catchPhrase = faker_1.default.company.catchPhrase();
     this.location = {

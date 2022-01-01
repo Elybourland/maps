@@ -1,13 +1,16 @@
 import faker from 'faker';
+import { Mappable } from './CustomMap';
 
 // Installing type definition files by 'npm install @types/faker' in terminal
 
-export class User {
+export class User implements Mappable{
   name: string;
   location: {
     lat: number;
     lng: number;
   };
+
+  color: string = 'red';
 
 // Used parseFloat on lat and lng, because faker has them as strings and not number
 
